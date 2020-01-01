@@ -1,5 +1,3 @@
-require 'pry'
-
 class Patient
 
     attr_accessor :name 
@@ -23,9 +21,12 @@ class Patient
         @@all
     end
 
-    def doctors #?? huh what is happening here
+    def doctors
         appointments.map do |a| 
             a.doctor
         end
     end
 end
+
+
+  
