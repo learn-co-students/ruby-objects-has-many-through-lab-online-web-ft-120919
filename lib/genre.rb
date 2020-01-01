@@ -17,9 +17,9 @@ class Genre
         @@all
     end
 
-    def artists
-        Artist.all.select { |artist| artist.genre == self}
+    def artists #?? huh what is happening here
+        songs.map do |song| 
+            song.artist
+        end
     end
-
-
 end
